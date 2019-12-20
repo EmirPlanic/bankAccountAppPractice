@@ -7,7 +7,13 @@ public class Checking extends Account {
 	
 	public Checking (String name,String sSN,double initDeposit) {
 		super(name,sSN,initDeposit);
-		System.out.println("NEW CHECKING ACCOUNT");
+		accountNumber = "2" + accountNumber;
+	
 		
+	}
+	
+	public void showInfo () {
+		super.showInfo();
+		System.out.println("ACCOUNT TYPE : Checking Account");
 	}
 }
