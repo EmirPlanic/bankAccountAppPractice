@@ -1,26 +1,23 @@
 package bankAccountAppPractice;
 
+import java.util.List;
+
 public class BankAccountApp {
 
 	public static void main(String[] args) {
 		
-		Checking chkacc1 = new Checking ("Tom Wilson","123456789",1500);
+		String file = "D:\\CSV\\NewBankAccounts.csv";
 		
-		Savings saveacc1 = new Savings ("Rich lee","123456788",2500);
+	List<String[]> newAccountHolder = utilities.CSV.read(file);
 		
-		
-		
-		
-		saveacc1.compound();
-		
-		saveacc1.showInfo();
-		
-		System.out.println("********************************");
-		
-		chkacc1.showInfo();
-		
-		
-		
+		for (String[] accountHolder : newAccountHolder) {
+			System.out.println("NEW ACCOUNT");
+			System.out.println(accountHolder[0]);
+			System.out.println(accountHolder[1]);
+			System.out.println(accountHolder[2]);
+			System.out.println(accountHolder[3]);
+			
+		}
 	}
 
 }
