@@ -8,6 +8,11 @@ public class BankAccountApp {
 		
 		Savings saveacc1 = new Savings ("Rich lee","123456788",2500);
 		
+		
+		
+		
+		saveacc1.compound();
+		
 		saveacc1.showInfo();
 		
 		System.out.println("********************************");
@@ -15,9 +20,7 @@ public class BankAccountApp {
 		chkacc1.showInfo();
 		
 		
-		saveacc1.deposit(5000);
-		saveacc1.withdraw(200);
-		saveacc1.transfer("YAYAYA", 3000);
+		
 	}
 
 }
