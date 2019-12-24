@@ -38,8 +38,11 @@ public class BankAccountApp {
 		}
 		for (Account acc : accounts) {
 			System.out.println("\n*********************************");
-			acc.showInfo();
+			acc.showInfoOfAllAccounts();
 		}
+		
+		
+		
 	}
 
 }

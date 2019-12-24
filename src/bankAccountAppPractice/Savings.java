@@ -29,7 +29,7 @@ private	int safetyDepositBoxKey;
 	
 	public void showInfo() {
 		
-		super.showInfo();
+		super.showInfoOfAllAccounts();
 		System.out.println(
 				"Your Saving Account Features" + 
 		         "\n Safety Deposit Box ID " + safetyDepositBoxID +

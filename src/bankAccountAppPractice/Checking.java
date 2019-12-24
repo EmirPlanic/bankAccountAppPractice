@@ -27,7 +27,7 @@ private	int debitCardPIN;
 	}
 	
 	public void showInfo () {
-		super.showInfo();
+		super.showInfoOfAllAccounts();
 		System.out.println("Your Checking Account Features"
 				+ "\n Debit Card Number: " + debitCardNumber +
 				 "\n Debit Card PIN: "  + debitCardPIN
